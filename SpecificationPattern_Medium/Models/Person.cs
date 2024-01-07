@@ -9,6 +9,7 @@ namespace SpecificationPattern_Medium.Models
     public class Person
     {
         public int Age { get; set; }
+        public ConcertTicket ConcertTicket { get; set; }
     }
 
 }

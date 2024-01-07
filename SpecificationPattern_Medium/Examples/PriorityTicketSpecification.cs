@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace SpecificationPattern_Medium
 {
-    public class PriorityTicketSpecification : Specification<ConcertTicket>
+    public class PriorityTicketSpecification : Specification<Person>
     {
-        public override Expression<Func<ConcertTicket, bool>> ToExpression()
+        public override Expression<Func<Person, bool>> ToExpression()
         {
-            return x => x.TicketType == TicketType.VIP;
+            return x => x.ConcertTicket.TicketType == TicketType.VIP;
         }
     }
 }
