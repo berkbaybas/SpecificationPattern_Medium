@@ -1,0 +1,1 @@
+SpecificationPattern_Medium
